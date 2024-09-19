@@ -1,0 +1,127 @@
+    body {
+        font-family: "Libre Baskerville", serif;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white; 
+    }
+    
+    header {
+        background-color: #0d0c0c;
+        padding: 10px 0;
+    }
+    
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+    }
+    
+    #one {
+        font-size: 35px;
+        font-weight: bolder;
+    }
+    
+    ul {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .fclass {
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .f {
+        transition: color 0.3s ease;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .f:hover {
+        color: rgb(180, 37, 37);
+    }
+    
+    .active {
+        color: rgb(180, 37, 37);
+        font-weight: bolder;
+    }
+    
+    .review, .reviews {
+        width: 80%;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 5px;
+        background: url("img/bg.jpg");
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border: 1px solid red;
+    }
+    
+    .review-content {
+        padding: 10px;
+    }
+    
+    .review-card {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    #img {
+        max-width: 300px;
+        height: auto;
+        border-radius: 5px;
+        transition: ease 0.3s;
+    }
+    #img:hover
+    {
+      transform:scale(1.1);
+    }
+    
+    #link {
+        text-decoration: none;
+        color: rgb(55, 103, 89);
+        font-weight: bolder;
+        display: inline-block;
+        margin-bottom: 30px;
+        transition: ease 0.9s;
+    }
+    
+    #link:hover {
+      transform:scale(1.3);
+        color: rgb(0, 0, 0);
+    }
+    
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #0d0c0c;
+    }
+    
+    @media (max-width: 768px) {
+        header nav {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        ul {
+            display: block;
+            text-align: center;
+        }
+    
+        .review-card {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        #img {
+            margin: 0 auto;
+        }
+    }
